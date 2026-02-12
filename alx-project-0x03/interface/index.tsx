@@ -1,16 +1,20 @@
-// Home Page Routing Interface
-export interface PageRouteProps {
-  pageRoute: string;
-}
-
-// Button Component Interface
+// Button Interface
 export interface ButtonProps {
-  action: () => void;
-  buttonLabel: string;
-  buttonBackgroundColor?: "blue" | "green" | "orange";
+  buttonLabel: string
+  buttonSize?: string
+  buttonBackgroundColor?: 'red' | 'blue' | 'orange' | 'green'
+  action?: () => void
 }
 
-// Layout Props Interface
-export interface LayoutProps {
-  children: React.ReactNode;
+// Page Route Interface
+export interface PageRouteProps {
+  pageRoute: string
 }
+
+// Layout Interface
+import { ReactNode } from "react";
+
+export interface LayoutProps {
+  children: ReactNode;
+}
+

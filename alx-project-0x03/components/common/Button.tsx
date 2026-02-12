@@ -2,6 +2,10 @@
 import React from "react";
 import { ButtonProps } from "@/interface";
 
+
+const Button = ({ buttonLabel, buttonSize, buttonBackgroundColor, action }: ButtonProps) => {
+
+
 const Button: React.FC<ButtonProps> = ({
   action,
   buttonLabel,
