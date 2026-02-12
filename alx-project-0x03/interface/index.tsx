@@ -1,4 +1,5 @@
-// Button Interface
+import { ReactNode } from "react";
+
 export interface ButtonProps {
   buttonLabel: string
   buttonSize?: string
@@ -6,15 +7,10 @@ export interface ButtonProps {
   action?: () => void
 }
 
-// Page Route Interface
 export interface PageRouteProps {
   pageRoute: string
 }
 
-// Layout Interface
-import { ReactNode } from "react";
-
 export interface LayoutProps {
   children: ReactNode;
 }
-
